@@ -6,15 +6,14 @@ var numbers=prompt("ingresar número de tarjeta"); /*coloque el prompt al princi
 function isValidCar(){
 	
 	var result=[];
-	var array=[result].reverse();//el reverse lo coloque porque sirve para invertir los elementos
-	//tngo que multiplicar cada casilla par
+	var result=numbers.reverse();//el reverse lo coloque porque sirve para invertir los elementos
+	//tngo que multiplicar cada casilla par(luhn)
+	for(var i=0; i<numbers.length; i++){ 
 	if(result==""){ // puse "", porque el usuario no puede ingresar un campo vacío
 	alert("tarjeta inválida");
 }else{
 	return alert("tarjeta válida");
 
 }
-
 }
-
-
+}
